@@ -134,17 +134,17 @@ copy text <user.rango_target>:
   user.rango_command_with_target("copyElementTextContent", rango_target)
 
 # Paste
-paste to <user.rango_target>:
+paste [into|to] <user.rango_target>:
   user.rango_command_with_target("insertToField", rango_target, clip.text())
 
-# Insert text to field
-insert <user.text> to <user.rango_target>:
+# Insert text   field
+insert <user.text> [into|to] <user.rango_target>:
   user.rango_command_with_target("clickElement", rango_target)
   sleep(200ms)
   edit.select_all()
   edit.delete()
   insert(text)
-enter <user.text> to <user.rango_target>:
+enter <user.text> [into|to] <user.rango_target>:
   user.rango_command_with_target("clickElement", rango_target)
   sleep(200ms)
   edit.select_all()
