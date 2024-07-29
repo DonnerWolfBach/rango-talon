@@ -1,7 +1,7 @@
 tag: browser
 and not tag: user.rango_disabled
 -
-tag(): user.rango_direct_clicking
+# tag(): user.rango_direct_clicking
 
 # Click
 click <user.rango_target>:
