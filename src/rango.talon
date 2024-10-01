@@ -19,6 +19,12 @@ flick <user.rango_target>:
   user.rango_command_with_target("focusElement", rango_target)
   key(enter)
 
+# Focus and Space
+# needed for chatgpt on firefox, And possibly more
+flock <user.rango_target>:
+  user.rango_command_with_target("focusElement", rango_target)
+  key(space)
+
 # Focus tab
 (go tab | slot) <user.rango_tab_marker>:
   user.rango_command_with_target("activateTab", rango_tab_marker)
